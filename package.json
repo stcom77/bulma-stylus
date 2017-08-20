@@ -1,0 +1,40 @@
+{
+  "name": "bulma-stylus",
+  "version": "0.5.1",
+  "homepage": "https://github.com/stcom77/bulma-stylus",
+  "author": "Stanislav Kuznetsov <sunislands@yandex.ru> (sunislands@yandex.ru)",
+  "description": "Modern CSS framework based on Flexbox",
+  "main": "bulma.styl",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stcom77/bulma-stylus.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "stylus",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "captain-git-hook": "~1.0.5",
+    "stylus": "^0.54.5",
+    "postcss-cli": "^2.5.1"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-stylus && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --output ./css/bulma.css ./css/bulma.css",
+    "build-clean": "rm -rf css; mkdir css",
+    "build-stylus": "stylus bulma.styl --out css",
+    "start": "stylus -w bulma.styl --out css"
+  },
+  "files": [
+    "css",
+    "stylus",
+    "bulma.stylus",
+    "LICENSE",
+    "README.md"
+  ]
+}

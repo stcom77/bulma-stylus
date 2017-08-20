@@ -1,0 +1,66 @@
+$primary = $turquoise unless $primary
+$info = $blue unless $info
+$success = $green unless $success
+$warning = $yellow unless $warning
+$danger = $red unless $danger
+$light = $white-ter unless $light
+$dark = $grey-darker unless $dark
+// Invert colors
+$orange-invert = findColorInvert($orange)
+$yellow-invert = findColorInvert($yellow)
+$green-invert = findColorInvert($green)
+$turquoise-invert = findColorInvert($turquoise)
+$blue-invert = findColorInvert($blue)
+$purple-invert = findColorInvert($purple)
+$red-invert = findColorInvert($red)
+$primary-invert = $turquoise-invert
+$info-invert = $blue-invert
+$success-invert = $green-invert
+$warning-invert = $yellow-invert
+$danger-invert = $red-invert
+$light-invert = $dark
+$dark-invert = $light
+// General colors
+$background = $white-ter unless $background
+$border = $grey-lighter unless $border
+$border-hover = $grey-light unless $border-hover
+// Text colors
+$text = $grey-dark unless $text
+$text-invert = findColorInvert($text)
+$text-light = $grey unless $text-light
+$text-strong = $grey-darker unless $text-strong
+// Code colors
+$code = $red unless $code
+$code-background = $background unless $code-background
+$pre = $text unless $pre
+$pre-background = $background unless $pre-background
+// Link colors
+$link = $primary unless $link
+$link-invert = $primary-invert unless $link-invert
+$link-visited = $purple unless $link-visited
+$link-hover = $grey-darker unless $link-hover
+$link-hover-border = $grey-light unless $link-hover-border
+$link-focus = $grey-darker unless $link-focus
+$link-focus-border = $primary unless $link-focus-border
+$link-active = $grey-darker unless $link-active
+$link-active-border = $grey-dark unless $link-active-border
+// Typography
+$family-primary = $family-sans-serif unless $family-primary
+$family-code = $family-monospace unless $family-code
+$size-small = $size-7 unless $size-small
+$size-normal = $size-6 unless $size-normal
+$size-medium = $size-5 unless $size-medium
+$size-large = $size-4 unless $size-large
+// Lists and maps
+$c1 = $white, $black
+$c2 = $black, $white
+$c3 = $light, $light-invert
+$c4 = $dark, $dark-invert
+$c5 = $primary, $primary-invert
+$c6 = $info, $info-invert
+$c7 = $success, $success-invert
+$c8 = $warning, $warning-invert
+$c9 = $danger, $danger-invert
+$colors = {"white": $c1, "black": $c2, "light": $c3, "dark": $c4, "primary": $c5, "info": $c6, "success": $c7, "warning": $c8, "danger": $c9}
+$shades = {"black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis}
+$sizes = $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7
